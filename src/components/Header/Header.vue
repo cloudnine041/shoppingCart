@@ -1,9 +1,16 @@
 <template>
-  <div class="header-container">标题</div>
+  <div class="header-container">{{ title }}</div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    title: {
+      default: '',
+      type: String
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
